@@ -1,24 +1,18 @@
 #include "SNode.cpp"
 #include "LinkedList.cpp"
-#include "Mess_prio.cpp"
+#include <string>
+#include "PriorityQueue.h"
 
 
-
-template class Mess<int>;
-template class Mess<char>;
 
 template class SNode<int>;
-template class SNode<char>;
+template class SNode<std::string>;
 
 template class LinkedList<int>;
-template class LinkedList<char>;
+template class LinkedList<std::string>;
 
-
-
-
-
-
-
+template class PriorityQueue<int>;
+template class PriorityQueue<std::string>;
 
 
 

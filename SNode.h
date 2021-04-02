@@ -16,10 +16,11 @@ SNode<TYPE>* _next_elem;
 int _prio;
 
 public:
+~SNode();
 
 SNode();
 
-SNode(const TYPE & elem, const SNode<TYPE>* next_elem);
+SNode(const TYPE & elem, const int prio);
 
 TYPE &get_elem();
 
@@ -33,9 +34,15 @@ void set_next_elem(SNode<TYPE>& next_elem);
 
 void set_priority(const int & prio);
 
-bool operator<(const SNode<TYPE> & Node) const;
+bool operator<(SNode<TYPE> & Node);
 
-bool operator>(const SNode<TYPE> & Node) const;
+bool operator>(SNode<TYPE> & Node);
+
+bool operator<=(SNode<TYPE> & Node);
+
+bool operator>=(SNode<TYPE> & Node);
+
+
 
 };
 

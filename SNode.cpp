@@ -1,14 +1,21 @@
 #include "SNode.h"
 
 template<typename TYPE>
-SNode<TYPE>::SNode(){}
+SNode<TYPE>::~SNode()
+{
+
+}
 
 template<typename TYPE>
-SNode<TYPE>::SNode(const TYPE & elem, const SNode<TYPE>* next_elem)
+SNode<TYPE>::SNode(): _next_elem(nullptr)
 {
-_elem=elem;
 
-next_elem= NULL;
+}
+
+template<typename TYPE>
+SNode<TYPE>::SNode(const TYPE & elem, const int prio): _next_elem(nullptr),  _elem(elem), _prio(prio)
+{
+
 }
 
 template<typename TYPE>
@@ -49,19 +56,28 @@ _prio = prio;
 }
 
 template<typename TYPE>
-bool SNode<TYPE>::operator<(const SNode<TYPE> & Node) const
+bool SNode<TYPE>::operator<(SNode<TYPE> & Node) 
 {
-if((*this).get_prio() > Node.get_prio())
-    return true;
-return false;
+    return this->get_prio() > Node.get_prio();
 }
 
 template<typename TYPE>
-bool SNode<TYPE>::operator>(const SNode<TYPE> & Node) const
+bool SNode<TYPE>::operator>(SNode<TYPE> & Node)
 {
 return !(*this<Node);
 }
 
+template<typename TYPE>
+bool SNode<TYPE>::operator<=(SNode<TYPE> & Node) 
+{
+    return this->get_prio() >= Node.get_prio();
+}
+
+template<typename TYPE>
+bool SNode<TYPE>::operator>=(SNode<TYPE> & Node)
+{
+return !(*this<=Node);
+}
 
 
 
