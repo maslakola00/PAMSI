@@ -59,15 +59,15 @@ void PriorityQueue<TYPE>::print()
 }
 
 
-
+/*funkcja mieszająca*/
 template<typename TYPE>
 void mix(TYPE arr1[], int arr2[], int size)
 {
 for(int i=0; i<size;i++)
     {
-    int a = std::rand() % size;
-    std::swap(arr1[i], arr1[a]);
-    std::swap(arr2[i], arr2[a]);
+    int a = std::rand() % size; //wybieranie losowej liczby od 0 do size
+    std::swap(arr1[i], arr1[a]); //mieszanie tablicy z wartosciami
+    std::swap(arr2[i], arr2[a]); //mieszanie tablicy z priorytatami
     }
 
 

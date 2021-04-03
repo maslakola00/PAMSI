@@ -1,11 +1,11 @@
+
 #include "Mess_prio.h"
 
-// Klasa modelujaca obiekt przekazwyany do kolejki priorytetowej
 template<typename TYPE>
-Mess<TYPE>::Mess(){} //konstruktor bezparametryczny
+Mess<TYPE>::Mess(){} //konstruktor bezparametrowy
 
 template<typename TYPE>
-Mess<TYPE>::Mess(int key, const TYPE & value) //konstruktor parametryczny
+Mess<TYPE>::Mess(int key, const TYPE & value) //konstruktor parametrowy
 {   
 _key=key;
 

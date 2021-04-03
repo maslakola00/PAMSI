@@ -8,11 +8,6 @@
 #include "PriorityQueue.cpp"
 
 
-
-
-
-
-
 int main()
     {
 
@@ -27,11 +22,12 @@ while(1)
 std::cout<< std::endl;
 std::cout << " Wybierz opcje: " << std::endl;
 std::cout << "1. Podaj rozmiar pakietow,na ktore Jan chce podzielic wiadomosc " << std::endl;
-std::cout << "2. Wpisz wiadomosc w pakiecie, podaj jego priorytet oraz wyslij do Anny " << std::endl;
+std::cout << "2. Wpisz wiadomosc w pakiecie, wyslij do Anny " << std::endl;
 std::cout << "3. Wyswietl posortowana wiadomosc " << std::endl;
 std::cout << "4. Usun pakiet o najwyzszym priorytecie " <<std::endl;
 std::cout << "5. Sprawdz czy kolejka jest pusta " <<std::endl;
 std::cout << "6. Zakoncz dzialanie programu" <<std::endl;
+std::cout<<std::endl;
 std::cin >>num;
 std::cout <<std::endl;
 
@@ -65,7 +61,7 @@ std::cout << std::endl;
     prio_arr[i] = i;
 
 if(i==size-1)
-mix(value_arr,prio_arr,size);
+mix(value_arr,prio_arr,size); //mieszkanie wiadomosci
 
 i++;
 }
