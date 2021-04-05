@@ -1,7 +1,6 @@
 #include <iostream>
 #include "LinkedList.h"
-
-
+//#include "/include/LinkedList.h"
 
 
 template<typename TYPE>

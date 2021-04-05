@@ -44,8 +44,9 @@ break;
 
 case 2:
 {
-if(pom!=0)
-    PriorityQueue.~PriorityQueue();
+
+while(PriorityQueue.get_size()) //jezeli cos jest w kolejce to to usun
+        PriorityQueue.Dequeue();
 
 std::string* value_arr = new std::string[size];
 int* prio_arr = new int[size];
@@ -61,7 +62,7 @@ std::cout << std::endl;
     prio_arr[i] = i;
 
 if(i==size-1)
-mix(value_arr,prio_arr,size); //mieszkanie wiadomosci
+mix(value_arr,prio_arr,size); //mieszanie wiadomosci
 
 i++;
 }
@@ -96,7 +97,7 @@ else
 break;
 
 case 6:
-exit(1);
+exit(1); //zakonczenie dzialania programu 
 break;
     }   
 }
