@@ -11,8 +11,8 @@
 int main()
     {
 
-int num; 
-int size,prio;
+int num; //zmienna do funkcji switch
+int size; // size-ilosc pakietow, prio-
 std::string value;
 PriorityQueue<std::string> PriorityQueue;
 int pom=0;
@@ -34,7 +34,7 @@ std::cout <<std::endl;
 switch(num)
     {
 
-case 1:
+case 1: //podanie ilosci pakietow, na ktore chce sie podzielic wiadomosc
  {
 std::cout << "Rozmiar wiadomosci: ";
 std::cin >> size;

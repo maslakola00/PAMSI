@@ -18,7 +18,7 @@ LinkedList<TYPE>::LinkedList(): head(nullptr)
     
 }
 
-//zwraca 1 element listy
+
 template<typename TYPE>
 const TYPE & LinkedList<TYPE>::front() const
 {

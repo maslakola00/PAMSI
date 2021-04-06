@@ -41,8 +41,8 @@ void add_by_priority(const TYPE& Node, const int &prio);
 void removeFront();
 
 /*
- *
- *
+ *front()
+ *zwraca pierwszy element listy
  * */
 const TYPE & front() const;
 
@@ -62,7 +62,7 @@ void print();
 
 /*
  *add_without_priority
- *
+ *dodawanie pakietow do listy bez uwzgledniania priorytetow
  *
  * */
 void add_without_priority(const TYPE& Node, const int &prio);

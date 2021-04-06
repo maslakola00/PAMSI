@@ -36,8 +36,8 @@ void Enqueue(const TYPE& elem, int prio);
 void Dequeue();
 
 /*
- *
- *
+ *get_front()
+ *zwraca pierwszy element kolejki
  * */
 const TYPE& get_front() const;
 
