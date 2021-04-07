@@ -10,7 +10,7 @@ LinkedList<TYPE>::~LinkedList()
 }
 
 
-//inicjuje obiekt ktory nie poakzuje na nic (NULL)
+
 template<typename TYPE>
 LinkedList<TYPE>::LinkedList(): head(nullptr)
 {
