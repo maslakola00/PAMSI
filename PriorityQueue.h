@@ -23,7 +23,7 @@ PriorityQueue(); //konstruktor bezparametrowy
 /*
  * Enqueue()
  * dodawanie do kolejki wedlug ustalonego wczesniej priorytetu
- * const TYPE& elem - element O typie const TYPE
+ * const TYPE& elem - element o typie const TYPE
  * int prio - priorytet
  * */
 void Enqueue(const TYPE& elem, int prio);
